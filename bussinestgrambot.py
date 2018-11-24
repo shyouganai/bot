@@ -31,7 +31,7 @@ class BotHandler:
         return last_update
 
 bot = BotHandler('725747356:AAEFgtOqhV9Wm56U2E2J4QZnqS-kGSd3glg')
-greetings = ('здравствуйте', 'привет', 'ку', 'здорово')
+greetings = ('здравствуйте', 'привет', 'ку', 'здорово', 'hello')
 
 def main():
     new_offset = None
