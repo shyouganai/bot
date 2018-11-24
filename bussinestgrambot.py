@@ -16,13 +16,14 @@ class BotHandler:
 
     def send_message(self, chat_id, text):
         method = 'sendMessage'
-        params = {'chat_id': char_id, 'text': text}
+        params = {'chat_id': chat_id, 'text': text}
         resp = request.post(self.api_url + method, params)
         return resp
 
     def get_last_update(self):
         get_result = self.get_updates()
 
+        last_update = ''
         if len(get_result) > 0:
             last_update = get_result[-1]
         else:
