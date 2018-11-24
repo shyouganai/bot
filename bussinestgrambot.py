@@ -17,7 +17,7 @@ class BotHandler:
     def send_message(self, chat_id, text):
         method = 'sendMessage'
         params = {'chat_id': chat_id, 'text': text}
-        resp = request.post(self.api_url + method, params)
+        resp = requests.post(self.api_url + method, params)
         return resp
 
     def get_last_update(self):
